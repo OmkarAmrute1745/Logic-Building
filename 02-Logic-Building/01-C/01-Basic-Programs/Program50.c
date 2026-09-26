@@ -1,0 +1,53 @@
+/* Accept number from user and count digits
+  Example
+  Input  : 751
+  Output : 3
+  Input  : 7514
+  Output : 4
+  */   
+ // ***********   >=  infinite loop  Negative convert positive
+ // Updater
+ // Handled 0  by using filter
+ 
+
+#include<Stdio.h>
+
+int CountDigits(int iNo)
+{
+    int iDigit = 0;
+    int iCnt = 0;
+ if(iNo == 0)  // filter
+ {
+    return 1;
+ }
+
+ if(iNo < 0)   // Updater 
+ {
+      iNo = -iNo ; // - - > +
+}
+
+    while(iNo > 0)
+{
+    iDigit = iNo % 10;
+    iNo = iNo / 10;
+    iCnt ++;
+}
+    return iCnt;
+}
+
+int main()
+{
+    int iValue = 0;
+    int iRet = 0;
+
+    printf("Please enter number : \n");
+    scanf("%d",&iValue);
+
+    iRet = CountDigits(iValue);
+
+    printf("Number of digits are : %d \n ",iRet);
+
+    return 0;
+}
+
+

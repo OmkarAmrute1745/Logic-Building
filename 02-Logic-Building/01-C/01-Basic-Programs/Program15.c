@@ -1,0 +1,29 @@
+// with functional approach
+// Demonstration of sequence
+
+/*
+
+  Return_Datatype Function_Name(Parameters_List)
+  {
+    // Function_Body    =>Sequence / Selection /iteration / Combination of all
+  }
+
+*/
+
+#include<stdio.h>
+
+void Display()
+{
+   printf("Jay Ganesh...\n");
+   printf("Jay Ganesh...\n");
+   printf("Jay Ganesh...\n");
+   printf("Jay Ganesh...\n");
+   printf("Jay Ganesh...\n");
+}
+
+int main()
+{
+   Display();
+
+   return 0;
+}

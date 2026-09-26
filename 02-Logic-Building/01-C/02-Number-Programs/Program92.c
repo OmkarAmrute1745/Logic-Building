@@ -1,0 +1,38 @@
+/*
+  4. Pattern Printing 
+    
+     Input : 4
+     Output : 4
+              3
+              2
+              1 
+*/
+
+
+#include<stdio.h>
+
+void Display(int iNo)
+{
+    if(iNo < 0)
+    {
+        iNo = -iNo;
+    } 
+
+   for(int iCnt = iNo; iCnt >= 1 ; iCnt--)
+   {
+      printf("%d \n",iCnt);
+   }
+}
+
+int main()
+{
+   int iValue = 0;
+
+   printf("Enter Number : ");
+   scanf("%d",&iValue);
+
+   Display(iValue);
+ 
+    return 0;
+}
+ 
