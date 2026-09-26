@@ -1,0 +1,16 @@
+# Java compiled files
+*.class
+
+# C/C++
+*.exe
+*.out
+*.o
+
+# IDE
+.idea/
+.vscode/
+
+# Build output
+target/
+bin/
+build/
